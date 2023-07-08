@@ -261,7 +261,13 @@ b {
     }
 
     .photos {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .photos img {
+        width: 100%;
+        aspect-ratio: 1/1;
     }
 }
 </style>
