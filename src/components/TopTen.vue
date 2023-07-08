@@ -26,6 +26,7 @@ const props = defineProps({
 interface Top10Breeds {
     name: string
     description: string
+    id: string
 }
 interface Images {
 
@@ -38,8 +39,12 @@ onMounted(async () => {
     images.value = await fetchImages();
 });
 
+interface Breed {
+    searches: number;
+}
+
 const fetchTop10Breeds = async () => {
-    const sorted = props.breeds.sort((a, b) => b.searches - a.searches);
+    const sorted = props.breeds.sort((a: Breed, b: Breed) => b.searches - a.searches);
     return sorted.slice(0, 10);
 };
 
