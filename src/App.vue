@@ -183,9 +183,9 @@ const modalDelete: Ref<ModalDialog> = ref(null)
       <a href="">Read more</a>
     </div>
     <div class="collage">
-      <img src="/image 2.png" alt="" />
-      <img src="/image 1.png" alt="" />
-      <img src="/image 3.png" alt="" />
+      <img src="/imageTwo.png" alt="" />
+      <img src="/imageOne.png" alt="" />
+      <img src="/imageThree.png" alt="" />
     </div>
   </div>
 
